@@ -1,0 +1,32 @@
+#app {
+  margin: auto;
+  text-justify: center;
+  text-align: center;
+  margin-top: 3%;
+}
+
+#app .title {
+  font-family: "Lobster", cursive;
+}
+
+#app img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+
+#app .male {
+  border-color: blue;
+  background-color: rgb(91, 7, 248);
+  color: white;
+}
+#app .female {
+  border-color: rgb(253, 3, 199);
+  background-color: rgb(245, 9, 139);
+  color: white;
+}
+
+#app span {
+  font-weight: bold;
+}

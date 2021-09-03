@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <title>Random User Generator</title>
+</head>
+<body>
+
+    <div id="app" class="align-middle">
+        <h1 class="text-uppercase title">Welcome to generate Random User Page 🧐</h1>
+        <hr>
+        <img :class="gender" v-bind:src="picture" v-bind:alt="firstName" />
+        <h1>{{firstName}} {{lastName}}</h1>
+        <p><span>Username: </span>{{username}}</p>
+        <p><span>Gender: </span>
+        <span v-if="gender == 'male'">👨‍✈️</span>
+        <span v-else>👩‍✈️</span>
+        </p>
+        <p><span>Email: </span>{{email}}</p>
+        <p><span>Address: </span>{{city}},{{country}}</p>
+        <p><span>PostCode: </span>{{postcode}}</p>
+        <p><span>State: </span>{{state}}</p>
+        <p><span>Cell Number: </span>{{cell}}</p>
+        <button v-on:click="getUser()" class="btn" :class="gender">Generate Random User</button>
+        
+    </div>
+    
+    
+    
+    
+    
+    
+
+    <!-- Vue Added -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.5"></script>
+    <!-- <script src="https://unpkg.com/vue@3.0.5"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>
